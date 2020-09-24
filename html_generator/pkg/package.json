@@ -1,0 +1,13 @@
+{
+  "requires": true,
+  "lockfileVersion": 1,
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "chart.js": "^2.9.3",
+    "citation-js": "^0.5.0-alpha.5",
+    "datatables.net-bs4": "^1.10.20",
+    "jquery": "^3.5.1",
+    "lazyload": "^2.0.0-rc.2",
+    "popper.js": "^1.16.1"
+  }
+}

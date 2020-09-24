@@ -1,0 +1,71 @@
+
+html,
+body {
+    background-color: #fff;
+}
+
+body {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    
+}
+
+.container, .container-fluid {
+    background-color: #fff;    
+}
+
+.toggle {
+  margin: 1px 1px;
+  padding: 2px 6px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  /* width: 8em; */
+}
+
+canvas {
+}
+
+.label{
+    display: block;
+}
+
+img.img-thumbnail{
+    max-width: 150px;
+}
+
+.artist{
+    display:block;
+}
+
+.www{
+    display:block;
+}
+
+.licence{
+    display:block;
+}
+
+.rough-preview{
+    max-height: 24em;
+}
+
+.info-title{
+    font-weight:bold;
+}
+
+.stats{
+    display:inline-block;
+}
+
+.author{
+}
+.affiliation{
+}
+
+.nav-link { text-decoration: underline; }
+div.dataTables_wrapper div.dataTables_paginate ul.pagination {
+    margin: 2px 0;
+    white-space: nowrap;
+    justify-content: flex-start;
+}
