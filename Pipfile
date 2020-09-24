@@ -1,0 +1,25 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+pytest = "*"
+
+[packages]
+opencv-python  = "*"
+svglib = "*"
+numpy = "*"
+tqdm = "*"
+cssutils = "*"
+pandas = "==0.25.3"
+matplotlib = "*"
+CairoSVG = "*"
+Pillow = "*"
+PyYAML = "*"
+svgpathtools = {git = "https://github.com/mathandy/svgpathtools/",ref = "master"}
+scipy = "*"
+aabbtree = "*"
+
+[requires]
+python_version = "3"

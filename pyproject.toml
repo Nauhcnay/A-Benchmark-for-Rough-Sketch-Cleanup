@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "sketchbench-code"
+version = "0.1.0"
+description = "Code for A Benchmark for Rough Sketch Cleanup"
+authors = ["Chuan Yan <cyan3@gmu.edu>", "David Vanderhaeghe <vdh@irit.fr>", "Yotam Gingold <yotam@yotamgingold.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+svglib = "*"
+numpy = "*"
+tqdm = "*"
+cssutils = "*"
+pandas = "==0.25.3"
+matplotlib = "*"
+CairoSVG = "*"
+Pillow = "*"
+PyYAML = "*"
+scipy = "*"
+aabbtree = "*"
+svgpathtools = {git = "https://github.com/mathandy/svgpathtools/", rev = "master"}
+opencv-python = "^4.4.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "*"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"

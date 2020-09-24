@@ -1,0 +1,80 @@
+# ===============
+# DEFAULT STEP CONFIG
+# ===============
+
+normalize: # normalize svg files
+  False
+generate_test: # generate tests
+  False
+evaluation: # evaluate metrics
+  False
+website: # create html pages
+  False
+thumbs: # create thumbnails
+  False
+show: # start the browser and open index.html
+  False
+# ===============
+# TESTSET CONFIG
+# ===============
+rough_layers: [ # layers of rough vector sketch that want to be used during the test
+                "_norm_full", 
+                "_norm_rough"
+              ]
+gt_layers: [  # layers of ground truth sketch that want to be used
+              "_norm_full", 
+              "_norm_cleaned"
+           ]
+size: [ # Sizes of longer side for each test sketch
+        500, 
+        1000
+      ]
+
+# =================
+# EVALUATION CONFIG
+# =================
+table_list: [
+              'auto_to_gt',
+              'gt_to_gt'
+            ]
+metrics: [
+            "f_score", #"f_score" must be included
+            "chamfer", 
+            "hausdorff"
+         ]
+dis_start: 0
+dis_end: 40
+dis_step: 2
+ambiguity_distance: [
+                      2, 
+                      4, 
+                      6, 
+                      8, 
+                      10
+                    ]
+
+# ===========
+# PATH CONFIG
+# ===========
+
+#inkscape_path: '/usr/bin/inkscape'
+#magick_path: '/usr/bin/convert'
+
+
+# DON'T CHANGE anything below in the section unless necessary!
+alg_dir: './data/Automatic_Results/'
+dataset_dir: './data/Benchmark_Dataset/' # original dataset
+web_dir: './data/web/'
+test_dir: './data/Benchmark_Testset/'
+table_dir: './data/Evaluation_Data/'
+
+log_dir: './logs' # log for automatic result
+label: './data/Benchmark_Dataset/sketch_tags.csv' # sketch label file
+
+test_png: 'rough/pixel/'
+test_svg: 'rough/vector/'
+gt_png: 'gt/pixel/'
+gt_svg: 'gt/vector/'
+
+
+authors: ["Santiago Rial", "Ge Jin", "Jonathan Velasco", "Branislav Mirkovic", "Liliya Larsen", "Diego Barrionuevo", "Maria Hegedus", "Evgeniya Besedina"]
