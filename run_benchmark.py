@@ -493,6 +493,10 @@ def procedure_all(config):
 
     # TODO: integrate benchmark HTML here, or we can just ask user to update the benchmark manunally
 
+    # Create web output directory
+    if (config["thumbs"] or config["website"]) and not Path( config['web_dir'] ).is_dir()  :
+        os.makedirs(Path(config['web_dir']))
+    
     if config["thumbs"]:
         print("Log:\tgenerating thumbnails for HTML pages...")
         
