@@ -1,6 +1,6 @@
 # A Benchmark for Rough Sketch Cleanup
 
-This is the code repository associated with the paper <a href="https://cragl.cs.gmu.edu/sketchbench/">*A Benchmark for Rough Sketch Cleanup* by Chuan Yan, David Vanderhaeghe, and Yotam Gingold from SIGGRAPH Asia 2020.</a>
+This is the code repository associated with the paper <a href="https://cragl.cs.gmu.edu/sketchbench/">*A Benchmark for Rough Sketch Cleanup*</a> by Chuan Yan, David Vanderhaeghe, and Yotam Gingold from SIGGRAPH Asia 2020.
 
 This code computes the metrics described in the paper and generates the benchmark website
 to compare the output of various sketch cleanup algorithms.
@@ -58,9 +58,7 @@ If you are not downloading the precomputed test images, make sure the following 
 
 ## The Dataset and Precomputed Output
 
-You can download the sketch dataset, precomputed algorithmic output, and computed metrics here: [Benchmark_Dataset.zip](https://drive.google.com/file/d/1UE5MfF3-HNdvCZWhSHGChNs3coKt6rlz/view?usp=sharing).
-
-[`Benchmark_Dataset.zip` (900 MB)](https://cragl.cs.gmu.edu/sketchbench/Benchmark_Dataset.zip), [`Automatic_Results.zip` (440 MB)](https://cragl.cs.gmu.edu/sketchbench/Automatic_Results.zip), [`Evaluation_Data.zip` (20 MB)](https://cragl.cs.gmu.edu/sketchbench/Evaluation_Data.zip)
+You can download the sketch dataset, precomputed algorithmic output, and computed metrics here: [`Benchmark_Dataset.zip` (900 MB)](https://cragl.cs.gmu.edu/sketchbench/Benchmark_Dataset.zip), [`Automatic_Results.zip` (440 MB)](https://cragl.cs.gmu.edu/sketchbench/Automatic_Results.zip), [`Evaluation_Data.zip` (20 MB)](https://cragl.cs.gmu.edu/sketchbench/Evaluation_Data.zip).
 Unzip them in `./data/` (unless you changed the paths in `cfg.yaml`):
 ```bash
 unzip Benchmark_Dataset.zip
