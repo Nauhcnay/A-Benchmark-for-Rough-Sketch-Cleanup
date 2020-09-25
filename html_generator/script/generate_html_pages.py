@@ -1351,13 +1351,6 @@ def generate_pages():
                      'You must have JavaScript enabled.'
                      '</div>'))
 
-
-#    html_file.write((f'  <div class="row {row_base_class} mb-4">'
-#                     '      <div class="col-md-12">'
-#                     '        <img src="teaser.png" alt="teaser" class="img-fluid"/>'
-#                     '      </div>'
-#                     '  </div>'))
-
     html_file.write(f'<div class="row {row_base_class}">')
     html_file.write('<div class="col">')
 

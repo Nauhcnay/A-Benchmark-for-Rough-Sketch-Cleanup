@@ -541,8 +541,6 @@ def procedure_all(config):
                 shutil.rmtree(to_directory)
             shutil.copytree(from_directory, to_directory)
 
-        shutil.copy(Path("html_generator")/"teaser.png", Path(config['web_dir']))
-
     # open the page
     if config["show"]:
         import webbrowser
