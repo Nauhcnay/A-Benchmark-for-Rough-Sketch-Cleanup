@@ -493,6 +493,10 @@ def procedure_all(config):
 
     # TODO: integrate benchmark HTML here, or we can just ask user to update the benchmark manunally
 
+    # Create web output directory
+    if (config["thumbs"] or config["website"]) and not Path( config['web_dir'] ).is_dir()  :
+        os.makedirs(Path(config['web_dir']))
+    
     if config["thumbs"]:
         print("Log:\tgenerating thumbnails for HTML pages...")
         
@@ -540,8 +544,6 @@ def procedure_all(config):
             if (Path(config['web_dir'])/directory).exists():
                 shutil.rmtree(to_directory)
             shutil.copytree(from_directory, to_directory)
-
-        shutil.copy(Path("html_generator")/"teaser.png", Path(config['web_dir']))
 
     # open the page
     if config["show"]:

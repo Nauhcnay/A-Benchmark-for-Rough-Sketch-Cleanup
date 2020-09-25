@@ -91,12 +91,12 @@ pages=[{'id':'rough', 'url':'rough-table.html', 'name':'Rough Sketches', 'title'
        {'id':'gt', 'url':'gt-table.html', 'name':'Ground Truth (artist cleaned)', 'title':'Ground Truth: sketch cleanup by professional artists' },
        {'id':'gt-to-gt', 'url':'gt-to-gt.html', 'name':'Ground Truth metrics', 'title':'Messiness and Ambiguity'},
        {'id':'auto', 'url':'auto-table.html', 'name':'Algorithm Output', 'title':'Output from state-of-the-art sketch cleanup algorithms'},
-       {'id':'help', 'url':'help.html', 'name':'Help', 'title':'Supplemental organisation and References'},]
+       {'id':'help', 'url':'help.html', 'name':'Help', 'title':'Organization and References'},]
 pages_desc={'rough':('''
-This page presents all the rough sketches we collected in the wild,
+This website presents all the rough sketches we collected in the wild,
 along with 40 baseline sketches used in prior work.
 We curated a subset of all the sketches with a more even distribution of genre and style.
-For each curated sketch, we manually thresholded it to remove background.
+For each curated sketch, we manually thresholded them to remove the background.
 We also commissioned professional artists to vectorize the rough input and
 classify the strokes into different layers for the rough shape strokes and other kinds of
 strokes, such as shading strokes, scaffold lines, and lighting.
@@ -1350,13 +1350,6 @@ def generate_pages():
     html_file.write(('<div class="alert alert-danger" role="alert" id="js_gate">'
                      'You must have JavaScript enabled.'
                      '</div>'))
-
-
-#    html_file.write((f'  <div class="row {row_base_class} mb-4">'
-#                     '      <div class="col-md-12">'
-#                     '        <img src="teaser.png" alt="teaser" class="img-fluid"/>'
-#                     '      </div>'
-#                     '  </div>'))
 
     html_file.write(f'<div class="row {row_base_class}">')
     html_file.write('<div class="col">')
