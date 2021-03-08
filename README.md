@@ -66,6 +66,8 @@ unzip Automatic_Results.zip
 unzip Evaluation_Data.zip
 ```
 
+Note that the vectorized data has been normalized to have uniform line width.
+It was too tedious for artists to match line widths with the underlying image, so we did not require them to do so and then normalized the data.
 
 ## Running
 
